@@ -1,7 +1,7 @@
 import graphene
 
-from hours.schema import HoursQuery
-from hours.mutations import HoursMutation
+from hours.query import Query as HoursQuery
+from hours.mutations import Mutation as HoursMutation
 
 
 class Mutation(

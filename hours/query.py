@@ -1,16 +1,10 @@
 import graphene
 
-from graphene_django.types import DjangoObjectType
-
 from .models import HourValue
+from .types import HourValueType
 
 
-class HourValueType(DjangoObjectType):
-    class Meta:
-        model = HourValue
-
-
-class HoursQuery:
+class Query:
     hour_values = graphene.List(HourValueType)
     hour_value = graphene.Field(
         HourValueType,

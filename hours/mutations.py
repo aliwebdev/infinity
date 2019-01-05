@@ -7,5 +7,5 @@ class HourValueMutation(DjangoModelFormMutation):
         form_class = HourValueForm
 
 
-class HoursMutation:
+class Mutation:
     create_hour_value = HourValueMutation.Field()
